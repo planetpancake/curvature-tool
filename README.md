@@ -10,6 +10,8 @@ The "Covered by curvature" section is the "sagitta", as it's called, or how much
 
 It's worth mentioning that I've used equations that assume your eyes are on the ground, so if you dig yourself a pit and use a telescope, or simply place a camera on the ground, you should be able to test these results for yourself.
 
+The results are expressed in both meters and miles, for everyone's convenience.
+
 # Output of this script:
 
 ### Viewing distance:
