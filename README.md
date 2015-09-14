@@ -27,93 +27,90 @@ It's worth mentioning that I've used equations that assume your eyes are on the 
 
 -----
 
-## Viewing distance:
+### Viewing distance:
 20.00 miles
 
 32.19 km
 
-## Arc:
+### Arc:
 0.29 degrees
 
-## Covered by curvature:
+### Covered by curvature:
 0.01 miles
 
 20.34 m
 
 -----
 
-## Viewing distance:
+### Viewing distance:
 30.00 miles
 
 48.28 km
 
-## Arc:
+### Arc:
 0.43 degrees
 
-## Covered by curvature:
+### Covered by curvature:
 0.03 miles
 
 45.77 m
 
 -----
 
-## Viewing distance:
+### Viewing distance:
 40.00 miles
 
 64.37 km
 
-## Arc:
+### Arc:
 0.58 degrees
 
-## Covered by curvature:
+### Covered by curvature:
 0.05 miles
 
 81.37 m
 
 -----
 
-## Viewing distance:
+### Viewing distance:
 50.00 miles
 
 80.47 km
 
-## Arc:
+### Arc:
 0.72 degrees
 
-## Covered by curvature:
+### Covered by curvature:
 0.08 miles
 
 127.14 m
 
 -----
 
-## Viewing distance:
+### Viewing distance:
 60.00 miles
 
 96.56 km
 
-## Arc:
+### Arc:
 0.87 degrees
 
-## Covered by curvature:
+### Covered by curvature:
 0.11 miles
 
 183.07 m
 
 -----
 
-## Viewing distance:
+### Viewing distance:
 125.00 miles
 
 201.17 km
 
-## Arc:
+### Arc:
 1.81 degrees
 
-## Covered by curvature:
+### Covered by curvature:
 0.49 miles
 
 794.58 m
-
------
-
