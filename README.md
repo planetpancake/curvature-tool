@@ -12,15 +12,20 @@ It's worth mentioning that I've used equations that assume your eyes are on the 
 
 # Output of this script:
 
-Viewing distance:
+## Viewing distance:
+
 10.00 miles
+
 16.09 km
 
-Arc:
+## Arc:
+
 0.14 degrees
 
-Covered by curvature:
+## Covered by curvature:
+
 0.00 miles
+
 5.09 m
 
 -----
