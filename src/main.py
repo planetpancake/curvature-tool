@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from math import pi, sin, radians, sqrt
 
@@ -68,18 +67,24 @@ def calculate_arc_degrees(viewing_distance, circumference):
     return (viewing_distance / circumference) * 360  # degrees
 
 def display_results(viewing_distance, arc_degrees, sagitta):
-    print('View distance:')
+
+    print('### Viewing distance:')
     print('%0.2f miles' % km_to_mile(viewing_distance))
+    print()
     print('%0.2f %s' % select_metric(viewing_distance))
     print()
 
-    print('Arc:')
+    print('### Arc:')
     print('%0.2f degrees' % arc_degrees)
     print()
 
-    print("Covered by curvature:")
+    print("### Covered by curvature:")
     print('%0.2f miles' % km_to_mile(sagitta))
+    print()
     print('%0.2f %s' % select_metric(sagitta))
+    
+    print()
+    print('-----')
     print()
 
 def main():
@@ -88,20 +93,25 @@ def main():
     diameter = circumference / pi  # km
     radius = diameter / 2  # km
 
-    # Claimed numbers.
-    viewing_distance = (Mile(126) >> Kilometer).value  # km
 
-    # The distance in degrees.
-    arc_degrees = calculate_arc_degrees(viewing_distance, circumference)
+    # Show the viewing distances of 10, 20, ... 60 miles,
+    # and how much of the earth's curvature will get in the way.
+    for viewing_distance in (10, 20, 30, 40, 50, 60, 125):
 
-    # Calculate the half chord and the sagitta.
-    # Note: if you forget to divide the chord by 2, like I just did,
-    # you'll end up with the 800 meter (0.5 mile) figure.
-    half_chord = calculate_half_chord(radius, arc_degrees)  # km
-    sagitta = calculate_sagitta(radius, half_chord)  # km
+        # I'll be using SI units, so I'm going to have to convert the miles to kilometers.
+        viewing_distance = mile_to_km(viewing_distance)  # km
 
-    # Display results.
-    display_results(viewing_distance, arc_degrees, sagitta)
+        # The distance in degrees.
+        arc_degrees = calculate_arc_degrees(viewing_distance, circumference)
+
+        # Calculate the half chord and the sagitta.
+        # Note: if you forget to divide the chord by 2, like I just did,
+        # you'll end up with the 800 meter (0.5 mile) figure.
+        half_chord = calculate_half_chord(radius, arc_degrees)  # km
+        sagitta = calculate_sagitta(radius, half_chord)  # km
+
+        # Display results.
+        display_results(viewing_distance, arc_degrees, sagitta)
 
 if __name__ == '__main__':
     main()
