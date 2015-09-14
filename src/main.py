@@ -66,6 +66,7 @@ def calculate_arc_degrees(viewing_distance, circumference):
     """
     return (viewing_distance / circumference) * 360  # degrees
 
+
 def display_results(viewing_distance, arc_degrees, sagitta):
 
     print('### Viewing distance:')
@@ -86,6 +87,7 @@ def display_results(viewing_distance, arc_degrees, sagitta):
     print()
     print('-----')
     print()
+
 
 def main():
     # Earth's dimensions.
